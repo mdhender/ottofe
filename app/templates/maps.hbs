@@ -1,7 +1,7 @@
-<AppShell>
-    <AppContent @title="Maps">
-        {{#each @model as |map|}}
-            <Map @map={{map}} />
-        {{/each}}
-    </AppContent>
+<AppShell @page="maps">
+<AppContent @title="Maps">
+    {{#each @model as |map|}}
+        <Map @map={{map}} />
+    {{/each}}
+</AppContent>
 </AppShell>

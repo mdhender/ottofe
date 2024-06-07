@@ -1,7 +1,9 @@
 <article>
-    <h1>{{@report.name}}</h1>
+    <h1><LinkTo @route="report" @model={{@report}}>{{@report.name}}</LinkTo></h1>
     <p>
         Text and stuff.
     </p>
-    <p>Link to here should be /reports/{{@report.id}}.</p>
+    <p>
+        Link to <LinkTo @route="report" @model={{@report}}>{{@report.name}}</LinkTo>.
+    </p>
 </article>

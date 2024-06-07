@@ -1,7 +1,9 @@
 <article>
-    <h1>{{@map.name}}</h1>
+    <h1><LinkTo @route="map" @model={{@map}}>{{@map.name}}</LinkTo></h1>
     <p>
-        Download map for turn {{@map.turn}} from /turns/{{@map.turnId}}.
+        Download map for turn <LinkTo @route="turn" @model={{@map}}>/turn/{{@map.turn_id}}</LinkTo>.
     </p>
-    <p>Link to here should be /maps/{{@map.id}}.</p>
+    <p>
+        Link to here should be <LinkTo @route="map" @model={{@map}}>{{@map.name}}</LinkTo>.
+    </p>
 </article>

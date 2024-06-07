@@ -1,7 +1,7 @@
-<AppShell>
-    <AppContent @title="Reports">
-        {{#each @model as |report|}}
-            <Report @report={{report}} />
-        {{/each}}
-    </AppContent>
+<AppShell @page="reports">
+<AppContent @title="Reports">
+    {{#each @model as |report|}}
+        <Report @report={{report}} />
+    {{/each}}
+</AppContent>
 </AppShell>

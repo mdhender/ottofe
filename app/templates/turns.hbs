@@ -1,7 +1,7 @@
-<AppShell>
-    <AppContent @title="Turns">
-        {{#each @model as |turn|}}
-            <Turn @turn={{turn}} />
-        {{/each}}
-    </AppContent>
+<AppShell @page="turns">
+<AppContent @title="Turns">
+    {{#each @model as |turn|}}
+        <Turn @turn={{turn}} />
+    {{/each}}
+</AppContent>
 </AppShell>

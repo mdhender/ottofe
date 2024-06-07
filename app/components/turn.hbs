@@ -1,7 +1,9 @@
 <article>
-    <h1>{{@turn.name}}</h1>
+    <h1><LinkTo @route="turn" @model={{@turn}}>{{@turn.name}}</LinkTo></h1>
     <p>
         Text and stuff.
     </p>
-    <p>Link to here should be /turns/{{@turn.id}}.</p>
+    <p>
+        Link to <LinkTo @route="turn" @model={{@turn}}>{{@turn.name}}</LinkTo>.
+    </p>
 </article>

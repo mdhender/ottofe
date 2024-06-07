@@ -8,9 +8,9 @@
         <div class="hidden md:block">
         <div class="ml-10 flex items-baseline space-x-4">
             {{!-- Current: "bg-indigo-700 text-white", Default: "text-white hover:bg-indigo-500 hover:bg-opacity-75" --}}
-            <LinkTo @route="reports" class="bg-indigo-700 text-white rounded-md px-3 py-2 text-sm font-medium" aria-current="page">Reports</LinkTo>
-            <LinkTo @route="turns" class="text-white hover:bg-indigo-500 hover:bg-opacity-75 rounded-md px-3 py-2 text-sm font-medium">Turns</LinkTo>
-            <LinkTo @route="maps" class="text-white hover:bg-indigo-500 hover:bg-opacity-75 rounded-md px-3 py-2 text-sm font-medium">Maps</LinkTo>
+            <LinkTo @route="reports" class="{{if this.isReportsPage "bg-indigo-700"}} text-white {{if this.isReportsPage "" "hover:bg-indigo-500 hover:bg-opacity-75"}} rounded-md px-3 py-2 text-sm font-medium" aria-current="{{if this.isReportsPage "page" "false"}}">Reports</LinkTo>
+            <LinkTo @route="turns"   class="{{if this.isTurnsPage   "bg-indigo-700"}} text-white {{if this.isTurnsPage   "" "hover:bg-indigo-500 hover:bg-opacity-75"}} rounded-md px-3 py-2 text-sm font-medium" aria-current="{{if this.isTurnsPage   "page" "false"}}">Turns</LinkTo>
+            <LinkTo @route="maps"    class="{{if this.isMapsPage    "bg-indigo-700"}} text-white {{if this.isMapsPage    "" "hover:bg-indigo-500 hover:bg-opacity-75"}} rounded-md px-3 py-2 text-sm font-medium" aria-current="{{if this.isMapsPage    "page" "false"}}">Maps</LinkTo>
         </div>
         </div>
     </div>
