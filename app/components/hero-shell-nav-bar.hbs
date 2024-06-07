@@ -52,7 +52,12 @@
     <div class="mt-6 flow-root">
         <div class="-my-6 divide-y divide-gray-500/10">
         <div class="space-y-2 py-6">
-            <LinkTo @route="index" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">OttoMap</LinkTo>
+            {{#unless this.isIndexPage }}
+            <LinkTo @route="index"    class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">OttoMap</LinkTo>
+            {{/unless}}
+            {{#unless this.isFeaturesPage }}
+            <LinkTo @route="features" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Features</LinkTo>
+            {{/unless}}
             <a href="https://tribenet.wiki" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">TribeNet</a>
             <a href="https://worldographer.com" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Worldographer</a>
             <a href="https://github.com/mdhender/ottomap" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">GitHub</a>

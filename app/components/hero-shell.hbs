@@ -1,5 +1,5 @@
 <div class="bg-white">
-  <HeroShellNavBar />
+  <HeroShellNavBar @page={{@page}}/>
 
   <main>
     <div class="relative isolate">
@@ -26,6 +26,7 @@
 
             <div class="relative w-full max-w-xl lg:shrink-0 xl:max-w-2xl">
                 {{yield}}{{!-- Your content here --}}
+                <p><strong>This YIELD is a BUG and SHOULD be fixed!!</strong></p>
             </div>
 
             <div class="mt-14 flex justify-end gap-8 sm:-mt-44 sm:justify-start sm:pl-20 lg:mt-0 lg:pl-0">
