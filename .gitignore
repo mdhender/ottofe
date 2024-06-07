@@ -7,12 +7,15 @@
 
 # misc
 /.env*
+/.idea
 /.pnp*
 /.eslintcache
 /coverage/
 /npm-debug.log*
 /testem.log
 /yarn-error.log
+.DS_Store
+avatar.webp
 
 # ember-try
 /.node_modules.ember-try/
