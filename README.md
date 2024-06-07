@@ -47,6 +47,13 @@ Make use of the many generators for code, try `ember help generate` for more det
 
 Specify what it takes to deploy your app.
 
+```bash
+_local $ npm start
+_local $ ember build --environment=production
+server $ rm -rf /var/www/ottomap.playbymail.dev/dist/*
+_local $ scp -r dist server:/var/www/ottomap.playbymail.dev/
+```
+
 ## Further Reading / Useful Links
 
 - [ember.js](https://emberjs.com/)
