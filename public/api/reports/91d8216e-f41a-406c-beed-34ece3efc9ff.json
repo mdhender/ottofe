@@ -3,6 +3,8 @@
         "id": "91d8216e-f41a-406c-beed-34ece3efc9ff",
         "name": "0900-01.0138",
         "clan_id": "0138",
+        "turn_id": "656d8176-6e47-4043-9a2c-4a0d57e27ec0",
+        "turn_name": "0900-01",
         "log": [
             "// Parsing turn report...",
             "",
