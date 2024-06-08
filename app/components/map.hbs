@@ -1,7 +1,7 @@
 <div>
   <div class="px-4 sm:px-0">
     <h3 class="text-base font-semibold leading-7 text-gray-900">
-        Map <LinkTo @route="map" @model={{@map}}>{{@map.name}}</LinkTo> Information
+        <LinkTo @route="map" @model={{@map}} class="font-medium text-indigo-600 hover:text-indigo-500">Map {{@map.name}} Information</LinkTo>
     </h3>
     <p class="mt-1 max-w-2xl text-sm leading-6 text-gray-500">
         Map details and links to create or download the map.
@@ -12,7 +12,7 @@
       <div class="bg-gray-50 px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-3">
         <dt class="text-sm font-medium leading-6 text-gray-900">Turn Data</dt>
         <dd class="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">
-            Click <LinkTo @route="turn" @model={{@map}}>here</LinkTo> for turn data.
+            Click <LinkTo @route="turn" @model={{@map}} class="font-medium text-indigo-600 hover:text-indigo-500">here</LinkTo> for turn data.
         </dd>
       </div>
       <div class="bg-white px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-3">

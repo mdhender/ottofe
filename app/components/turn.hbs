@@ -1,7 +1,7 @@
 <div>
   <div class="px-4 sm:px-0">
     <h3 class="text-base font-semibold leading-7 text-gray-900">
-        Turn <LinkTo @route="turn" @model={{@turn}}>{{@turn.name}}</LinkTo> Information
+        <LinkTo @route="turn" @model={{@turn}} class="font-medium text-indigo-600 hover:text-indigo-500">Turn {{@turn.name}} Information</LinkTo>
     </h3>
     <p class="mt-1 max-w-2xl text-sm leading-6 text-gray-500">
         Details and trivia about the turn.

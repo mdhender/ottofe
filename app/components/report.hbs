@@ -1,7 +1,7 @@
 <div>
   <div class="px-4 sm:px-0">
     <h3 class="text-base font-semibold leading-7 text-gray-900">
-        Report <LinkTo @route="report" @model={{@report}}>{{@report.name}}</LinkTo> Information
+        <LinkTo @route="report" @model={{@report}} class="font-medium text-indigo-600 hover:text-indigo-500">Report {{@report.name}} Information</LinkTo>
     </h3>
     <p class="mt-1 max-w-2xl text-sm leading-6 text-gray-500">
         Report details and links to delete, reparse, or upload the report.
