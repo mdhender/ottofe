@@ -1,9 +1,84 @@
-<article>
-    <h1><LinkTo @route="report" @model={{@report}}>{{@report.name}}</LinkTo></h1>
-    <p>
-        Text and stuff.
+<div>
+  <div class="px-4 sm:px-0">
+    <h3 class="text-base font-semibold leading-7 text-gray-900">
+        Report <LinkTo @route="report" @model={{@report}}>{{@report.name}}</LinkTo> Information
+    </h3>
+    <p class="mt-1 max-w-2xl text-sm leading-6 text-gray-500">
+        Report details and links to delete, reparse, or upload the report.
     </p>
-    <p>
-        Link to <LinkTo @route="report" @model={{@report}}>{{@report.name}}</LinkTo>.
-    </p>
-</article>
+  </div>
+  <div class="mt-6 border-t border-gray-100">
+    <dl class="divide-y divide-gray-100">
+      <div class="bg-gray-50 px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-3">
+        <dt class="text-sm font-medium leading-6 text-gray-900">Turn Data</dt>
+        <dd class="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">
+            TODO: we should cross link the report and turn data.
+        </dd>
+      </div>
+      <div class="bg-white px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-3">
+        <dt class="text-sm font-medium leading-6 text-gray-900">Unit Data</dt>
+        <dd class="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">
+            Information on the units in the report.
+        </dd>
+      </div>
+      <div class="bg-gray-50 px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-3">
+        <dt class="text-sm font-medium leading-6 text-gray-900">Uploaded</dt>
+        <dd class="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">
+            2024/05/19 16:53:12
+        </dd>
+      </div>
+      <div class="bg-gray-50 px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-3">
+        <dt class="text-sm font-medium leading-6 text-gray-900">Parsed</dt>
+        <dd class="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">
+            2024/05/19 16:54:22
+            <div class="rounded-md bg-green-50 px-2 py-1 text-xs font-medium text-green-700 ring-1 ring-inset ring-green-600/20">Complete</div>
+
+        </dd>
+      </div>
+      <div class="bg-gray-50 px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-3">
+        <dt class="text-sm font-medium leading-6 text-gray-900">Log</dt>
+        <dd class="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">
+            This section should contain the logs (if available) from parsing each section of the report.
+<br><br>
+// Parsing turn report...<br>
+<br>
+Unit: Tribe 001 - Resource gathering efficiency: 78%.<br>
+// They finally learned to use both hands.<br>
+<br>
+Unit: Goat 042 - Milk production: 2 liters.<br>
+// That's a lot of milk... for a slacker.<br>
+<br>
+Unit: Monk 005 - Meditation progress: 95%.<br>
+// Enlightenment just around the corner... or not.<br>
+<br>
+Unit: Tribe 002 - Construction progress: 34%.<br>
+// Building a hut, or an art piece?<br>
+<br>
+Unit: Goat 017 - Grass consumption: 12 kg.<br>
+// Future goat cheese production guaranteed.<br>
+<br>
+Unit: Monk 007 - Chanting duration: 4 hours.<br>
+// Zen level: expert whiner.<br>
+<br>
+Unit: Tribe 003 - Trade route established with Tribe 004.<br>
+// Someone discovered the art of the deal.<br>
+<br>
+Unit: Goat 019 - Misplaced: found in Tribe 001's hut.<br>
+// Maybe goats understand construction better.<br>
+<br>
+Unit: Monk 002 - Herbal remedies created: 3.<br>
+// The local pharmacist is quaking.<br>
+<br>
+Unit: Tribe 005 - Discovered new farming technique.<br>
+// Finally figured out which end of the plow is up.<br>
+<br>
+Unit: Goat 015 - Attempted to eat Monk 005's scroll.<br>
+// Literary tastes are evolving.<br>
+<br>
+Unit: Monk 009 - Teaching session attendance: 8 tribesmen.<br>
+// Who knew chanting could be so popular?<br>
+        </dd>
+      </div>
+    </dl>
+  </div>
+</div>
